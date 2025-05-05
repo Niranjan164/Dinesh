@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ACADEMIC STUDY MATERIALS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #00ffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      margin-bottom: 40px;
+      font-weight: normal;
+      text-shadow: 0 0 10px #ff4d4d;
+    }
+
+    .glow-button {
+      padding: 20px 60px;
+      background: black;
+      color: cyan;
+      font-size: 1.5em;
+      border: 2px solid cyan;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px cyan, 0 0 30px #00ffff;
+    }
+
+    .glow-button:hover {
+      background: cyan;
+      color: black;
+      box-shadow: 0 0 25px #00ffff, 0 0 60px #00ffff;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ACADEMIC STUDY MATERIALS</h1>
+  <h2>by K. Niranjan Kumar</h2>
+  <button class="glow-button" onclick="playClick(); openDrive()">GET</button>
+
+  <div class="footer">Access all 10 subjects and study units in one place.</div>
+
+  <audio id="clickSound" src="https://github.com/Niranjan164/COMPILER/raw/main/click-151673_073339.mp3"></audio>
+
+  <script>
+    const clickSound = document.getElementById('clickSound');
+
+    function playClick() {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+
+    function openDrive() {
+      window.open("https://drive.google.com/drive/folders/1KiX6_bZqUC4TWaEbVwjd6NBGMB58f_A4", "_blank");
+    }
+  </script>
+
+</body>
+</html>
